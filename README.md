@@ -1,6 +1,6 @@
 # dev-002-bash
 for first script: 
-This Bash Script use for check a command durin a intervall 
+This Bash Script useed for check a command during a intervall 
 -i is for set interval time 
 -n is for number of trying to run program 
 and write any thing end of line that will process for command 
