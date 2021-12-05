@@ -25,19 +25,18 @@ n=$number
 #check command work or not 
 
 while [[ n -gt 0 ]] ; do
-	$command &> /dev/null
-	if [[ $? -eq 0 ]] ; then
-	        echo 'exit 0 done '	
-		exit 0
-	else 
-		sleep $interval
-		echo number: $n
-		((n--))
-		
-	echo 'exit 1'
-	fi
+        $command &> /dev/null
+        if [[ $? -eq 0 ]] ; then
+                echo 'exit 0 done '     
+                exit 0
+        else
+                sleep $interval
+                echo number: $n
+                ((n--))
+
+        echo 'exit 1'
+        fi
 done
 
-echo echo 'Your command dosent work  2> ./err.txt'
+echo 'echo Your command dosent work'  &> /dev/null
 exit 1
-
